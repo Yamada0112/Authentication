@@ -6,14 +6,15 @@ import "./App.css";
 
 const App = () => {
   return (
-    <>
+    <div className="w-full h-[100vh]">
       {/* Header at the top of every page */}
       <Header />
       {/* Outlet to render the current page */}
       <Outlet />
       {/* Footer at the bottom of every page */}
       <Footer />
-    </>
+    </div>
+    
   );
 };
 

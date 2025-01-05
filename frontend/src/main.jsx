@@ -15,6 +15,8 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Register from "./pages/Register.jsx";
+import Login from "./pages/Login.jsx";
+import Error from "./pages/Error.jsx";
 
 // Define the routes for the application
 const router = createBrowserRouter(
@@ -28,6 +30,8 @@ const router = createBrowserRouter(
       <Route path="/contact" element={<Contact />} />
 
       <Route path="/register" element={<Register />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="*" element={<Error />} />
     </Route>
   )
 );
